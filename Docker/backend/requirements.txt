@@ -1,0 +1,6 @@
+Flask
+flask-mysqldb
+flask_sqlalchemy
+mysql-connector-python
+flask-jwt-extended
+flask-mysql
