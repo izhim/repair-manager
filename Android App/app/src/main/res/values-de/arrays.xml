@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tam_fuente">
+        <item>Klein</item>
+        <item>Mittel</item>
+        <item>Groß</item>
+    </string-array>
+
+    <string-array name="valores_fuente">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="criterio_ordenacion">
+        <item>Alphabetisch</item>
+        <item>Erstellungsdatum</item>
+        <item>Verbleibende Tage</item>
+        <item>Fortschritt</item>
+    </string-array>
+
+    <string-array name="valores_criterio">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="sync_interval_entries">
+        <item>Nicht synchronisieren</item>
+        <item>Alle 15 Minuten</item>
+        <item>Alle 30 Minuten</item>
+        <item>Alle Stunde</item>
+    </string-array>
+
+    <string-array name="sync_interval_values">
+        <item>0</item>           <!-- Nicht synchronisieren -->
+        <item>900000</item>      <!-- 15 Minuten -->
+        <item>1800000</item>     <!-- 30 Minuten -->
+        <item>3600000</item>     <!-- 1 Stunde -->
+    </string-array>
+
+    <string-array name="opciones_dialogo_numero">
+        <item>Anrufen</item>
+        <item>WhatsApp senden</item>
+        <item>Nummer kopieren</item>
+        <item>Abbrechen</item>
+    </string-array>
+
+</resources>

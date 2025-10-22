@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/catVisualizacion"
+        app:icon="@drawable/visualizacion">
+<!--
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="@string/menuSwitchTema"
+            app:key="tema"
+            app:summaryOff="@string/menuSwitchOscuro"
+            app:summaryOn="@string/menuSwitchClaro" />
+-->
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="2"
+            android:title="@string/menuTamFuente"
+            app:entries="@array/tam_fuente"
+            app:entryValues="@array/valores_fuente"
+            app:key="fuente"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:key="idioma"
+            android:title="@string/idioma"
+            android:summary="@string/select_idioma"
+            android:entries="@array/idiomas"
+            android:entryValues="@array/codigos_idiomas"
+            android:defaultValue="es" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/catOrdenacion"
+        app:icon="@drawable/ordenacion">
+
+
+        <SwitchPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:defaultValue="true"
+            android:title="@string/menu_orden"
+            app:key="orden"
+            app:summaryOff="@string/menu_orden_desc"
+            app:summaryOn="@string/menu_orden_asc" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/catSync"
+        app:icon="@drawable/sincronizacion">
+
+
+        <ListPreference
+            android:key="sync_interval"
+            android:title="@string/frecuencia_sync"
+            android:summary="@string/select_sync"
+            android:entries="@array/sync_interval_entries"
+            android:entryValues="@array/sync_interval_values"
+            android:defaultValue="900000" />
+    </PreferenceCategory>
+    <Preference
+        android:key="preferencias"
+        android:layout_width="match_parent"
+        android:widgetLayout="@drawable/boton_preferencias" />
+</PreferenceScreen>

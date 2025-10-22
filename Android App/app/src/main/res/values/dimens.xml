@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="text_xs">12sp</dimen>  <!-- Texto pequeño (detalles secundarios) -->
+    <dimen name="text_sm">14sp</dimen>  <!-- Texto normal -->
+    <dimen name="text_md">16sp</dimen>  <!-- Texto destacado -->
+    <dimen name="text_lg">18sp</dimen>  <!-- Subtítulos -->
+    <dimen name="text_xl">22sp</dimen>  <!-- Títulos principales -->
+    <dimen name="text_xxl">26sp</dimen> <!-- Encabezados grandes -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="padding_menu_arriba">48dp</dimen>
+</resources>

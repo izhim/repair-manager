@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/ tools" >
+
+
+    <item
+        android:id="@+id/itCalendario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/toggle_view"
+        android:iconTint="@color/white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itFiltrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_filter"
+        android:iconTint="@color/white"
+        android:title="@string/itFiltrar"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itPreferencias"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/stPreferencias"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/itSincronizar"
+        android:icon="@drawable/ic_sync"
+        android:title="@string/stSincronizar"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/itEliminarDatos"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/stEliminarDatos"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/itCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/itSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/itSalir"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GestorAvisos" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Colores de fondo y texto -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+
+        <!-- Estilo para el RecyclerView -->
+        <item name="android:listDivider">@color/colorDivider</item>
+
+        <!-- Estilo para los ítems del RecyclerView -->
+        <item name="itemBackground">@color/recyclerViewItemBackground</item>
+        <item name="itemTextColor">@color/recyclerViewItemText</item>
+
+        <item name="colorOnPrimary">@color/white</item>
+
+    </style>
+    <style name="TextoResaltado" parent="Theme.GestorAvisos">
+        <item name="android:textColorPrimary">#FF9800</item> <!-- Color rojo -->
+        <item name="android:textStyle">bold</item> <!-- Negrita y cursiva -->
+    </style>
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores principales -->
+    <color name="colorPrimary">#1A237E</color> <!-- Azul oscuro -->
+    <color name="colorPrimaryDark">#000051</color> <!-- Azul más oscuro -->
+    <color name="colorAccent">#B71C1C</color> <!-- Burdeos -->
+
+    <!-- Colores complementarios -->
+    <color name="colorBackground">#F5F5F5</color> <!-- Fondo claro -->
+    <color name="colorTextPrimary">#212121</color> <!-- Texto oscuro -->
+    <color name="colorTextSecondary">#757575</color> <!-- Texto secundario -->
+    <color name="colorDivider">#BDBDBD</color> <!-- Divisor -->
+
+    <!-- Colores para el RecyclerView -->
+    <color name="recyclerViewItemBackground">#FAFFF4</color> <!-- Fondo de los ítems -->
+    <color name="recyclerViewItemText">#212121</color> <!-- Texto de los ítems -->
+    <color name="texthighlight">#FF9800</color> <!-- Texto de los ítems -->
+
+    <!-- Colores para los avisos -->
+    <color name="pendiente">#D70000</color> <!-- Fondo de los ítems -->
+    <color name="manianas">#4CAF50</color> <!-- Texto de los ítems -->
+    <color name="tardes">#FF9800</color>
+    <color name="indiferente">#2196F3</color>
+    <color name="parcial">#FFC107</color>
+    <color name="terminado">#D3000000</color>
+    <color name="cerrado">#454B4B4B</color>
+    <color name="ausente">#40616161</color><!-- Texto de los ítems -->
+    <color name="urgente">#3BFFEB3B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="iconoFiltrados">#FFC107</color>
+    <color name="telefono">#0339CE</color>
+    <color name="enlace">#0339CE</color>
+    <color name="estado_background">#10000000</color>
+    <color name="day_with_events_color">#C5DCF6</color>
+    <color name="btn_disabled">#616161</color>
+    <color name="dialog_text_color">#212121</color>
+
+</resources>

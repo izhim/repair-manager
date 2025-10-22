@@ -1,0 +1,63 @@
+<resources>
+
+    <string-array name="tam_fuente">
+        <item>Pequeña</item>
+        <item>Mediana</item>
+        <item>Grande</item>
+    </string-array>
+
+    <string-array name="valores_fuente">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="criterio_ordenacion">
+        <item>Alfabético</item>
+        <item>Fecha de creación</item>
+        <item>Días restantes</item>
+        <item>Progreso</item>
+    </string-array>
+
+    <string-array name="valores_criterio">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="sync_interval_entries">
+        <item>No sincronizar</item>
+        <item>Cada 15 minutos</item>
+        <item>Cada 30 minutos</item>
+        <item>Cada hora</item>
+    </string-array>
+
+    <string-array name="sync_interval_values">
+        <item>0</item>           <!-- No sincronizar -->
+        <item>900000</item>      <!-- 15 minutos -->
+        <item>1800000</item>     <!-- 30 minutos -->
+        <item>3600000</item>     <!-- 1 hora -->
+    </string-array>
+    <string-array name="idiomas">
+        <item>Español</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+    </string-array>
+
+    <string-array name="codigos_idiomas">
+        <item>es</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+    </string-array>
+
+    <string-array name="opciones_dialogo_numero">
+        <item>Llamar</item>
+        <item>Enviar WhatsApp</item>
+        <item>Copiar número</item>
+        <item>Cancelar</item>
+    </string-array>
+
+</resources>

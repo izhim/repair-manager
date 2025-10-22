@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        app:mcv_arrowColor="@color/colorPrimary"
+        app:mcv_calendarBackground="@color/colorBackground"
+        app:mcv_dateTextAppearance="@style/CalendarDateTextAppearance"
+        app:mcv_headerBackground="@color/colorBackground"
+        app:mcv_headerTextAppearance="@style/TextAppearance.AppCompat.Subhead"
+        app:mcv_selectionColor="@color/texthighlight"
+        app:mcv_showOtherDates="none"
+        app:mcv_tileHeight="38dp"
+        app:mcv_tileSize="40dp"
+        app:mcv_tileWidth="58dp"
+        app:mcv_weekDayBackground="@color/colorBackground"
+        app:mcv_weekDayTextAppearance="@style/CalendarWeekDayTextAppearance" />
+
+    <!-- Contenedor de TextViews (50% del ancho) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingTop="24dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textoFechaAvisos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/avisos_dia"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFechaAvisos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text=""
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAvisos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema base -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Personalización de colores -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Personalización de colores de fondo y texto -->
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+
+        <!-- Personalización del RecyclerView -->
+        <item name="android:listDivider">@color/colorDivider</item>
+
+        <!-- Tema de preferencias -->
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <!-- Tema específico para preferencias -->
+    <style name="PreferenceThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="preferenceCategoryStyle">@style/MyPreferenceCategory</item>
+        <item name="switchPreferenceStyle">@style/MySwitchPreference</item>
+        <item name="preferenceStyle">@style/MyPreferenceStyle</item>
+    </style>
+
+    <!-- Estilos personalizados para preferencias -->
+    <style name="MyPreferenceCategory" parent="Preference.Category">
+        <item name="android:icon">@drawable/basedatos</item>
+    </style>
+
+    <style name="MySwitchPreference" parent="Preference.SwitchPreferenceCompat">
+        <item name="android:summaryOn">@string/default_summary_on</item>
+        <item name="android:summaryOff">@string/default_summary_off</item>
+    </style>
+
+    <style name="MyPreferenceStyle" parent="Preference">
+        <item name="android:iconSpaceReserved" tools:targetApi="o">true</item>
+    </style>
+
+    <!-- Estilo para diálogos en orientación horizontal -->
+    <style name="LandscapeDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="CalendarWidgetHeader" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarWidgetDate" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Strings por defecto para los Switch -->
+    <string name="default_summary_on">valor por defecto</string>
+    <string name="default_summary_off">valor por defecto</string>
+
+
+
+    <declare-styleable name="MaterialCalendarView">
+        <attr name="mcv_weekDayBackground" format="color"/>
+        <attr name="mcv_calendarBackground" format="color"/>
+        <attr name="mcv_headerBackground" format="color"/>
+        <attr name="mcv_arrowColor" format="color"/>
+    </declare-styleable>
+
+    <style name="CalendarDateTextAppearance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/calendar_day_background</item>
+    </style>
+
+    <style name="CalendarWeekDayTextAppearance" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+    <style name="CustomAlertDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorSurface">@color/white</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/dialog_text_color</item>
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+</resources>

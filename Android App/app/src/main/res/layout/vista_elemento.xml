@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemRecycler"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/recyclerViewItemBackground"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/barraEstado"
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            android:background="@color/pendiente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:text="FECHA"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/barraEstado"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvUrgente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="9dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="9dp"
+            android:text="@string/urgente"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+        <TextView
+            android:id="@+id/tvTurno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="9dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingTop="10dp"
+            android:paddingRight="16dp"
+            android:text="TURNO"
+            android:textColor="@color/manianas"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvUrgente"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingVertical="3dp"
+            android:paddingLeft="16dp"
+            android:text="NOMBRE COMPLETO DEL CLIENTE"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/barraEstado"
+            app:layout_constraintTop_toBottomOf="@id/tvFecha"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tvDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingVertical="3dp"
+            android:paddingLeft="16dp"
+            android:text="DIRECCIÓN DEL CLIENTE"
+            app:layout_constraintStart_toEndOf="@id/barraEstado"
+            app:layout_constraintTop_toBottomOf="@id/tvNombre"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tvPoblacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingVertical="3dp"
+            android:paddingLeft="16dp"
+            android:text="POBLACIÓN"
+            app:layout_constraintStart_toEndOf="@id/barraEstado"
+            app:layout_constraintTop_toBottomOf="@id/tvDireccion"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+        <View
+            android:id="@+id/separador"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginVertical="1dp"
+            android:background="#CCCCCC"
+            app:layout_constraintStart_toEndOf="@id/barraEstado"
+            app:layout_constraintTop_toBottomOf="@id/tvPoblacion" />
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingVertical="3dp"
+            android:paddingLeft="16dp"
+            android:text="DESCRIPCION BREVE DE LA AVERIA"
+            app:layout_constraintStart_toEndOf="@id/barraEstado"
+            app:layout_constraintTop_toBottomOf="@id/separador"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

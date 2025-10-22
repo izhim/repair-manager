@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/btnRestablecer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/telefono"
+    android:onClick="btnRestablecer"
+    android:layout_margin="0dp"
+    android:text="@string/btn_preferencias"
+    android:textColor="@color/white"
+    android:textStyle="bold" />
+

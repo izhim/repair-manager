@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress NavigationFile -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.gestoravisos.Login.Ui.Login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_listaTrabajos"
+            app:destination="@id/listaTrabajosFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/listaTrabajosFragment"
+        android:name="com.example.gestoravisos.Fragments.ListaTrabajosFragment"
+        android:label="Lista de Trabajos"
+        tools:layout="@layout/fragment_lista_trabajos">
+        <action
+            android:id="@+id/action_listaTrabajos_to_detalleTrabajo"
+            app:destination="@id/detallesTrabajoFragment"/>
+        <action
+            android:id="@+id/action_listaTrabajosFragment_to_calendarioAvisosFragment"
+            app:destination="@id/calendarioAvisosFragment" />
+        <action
+            android:id="@+id/action_global_logout"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detallesTrabajoFragment"
+        android:name="com.example.gestoravisos.Fragments.DetallesAvisoFragment"
+        android:label="Detalle de Trabajo"
+        tools:layout="@layout/fragment_detalles_aviso"/>
+    <fragment
+        android:id="@+id/calendarioAvisosFragment"
+        android:name="com.example.gestoravisos.Fragments.CalendarioAvisosFragment"
+        android:label="CalendarioAvisosFragment" >
+        <action
+            android:id="@+id/action_calendarioAvisosFragment_to_detallesTrabajoFragment"
+            app:destination="@id/detallesTrabajoFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tam_fuente">
+        <item>Petit</item>
+        <item>Moyen</item>
+        <item>Grand</item>
+    </string-array>
+
+    <string-array name="valores_fuente">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="criterio_ordenacion">
+        <item>Alphabétique</item>
+        <item>Date de création</item>
+        <item>Jours restants</item>
+        <item>Progression</item>
+    </string-array>
+
+    <string-array name="valores_criterio">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="sync_interval_entries">
+        <item>Ne pas synchroniser</item>
+        <item>Toutes les 15 minutes</item>
+        <item>Toutes les 30 minutes</item>
+        <item>Toutes les heures</item>
+    </string-array>
+
+    <string-array name="sync_interval_values">
+        <item>0</item>           <!-- Ne pas synchroniser -->
+        <item>900000</item>      <!-- 15 minutes -->
+        <item>1800000</item>     <!-- 30 minutes -->
+        <item>3600000</item>     <!-- 1 heure -->
+    </string-array>
+
+    <string-array name="opciones_dialogo_numero">
+        <item>Appeler</item>
+        <item>Envoyer WhatsApp</item>
+        <item>Copier le numéro</item>
+        <item>Annuler</item>
+    </string-array>
+
+</resources>
