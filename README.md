@@ -1,6 +1,9 @@
 # Repair Manager
 
 A full-stack repair management system featuring an Android application for technicians, a Dockerized backend (Python Flask API, MySQL, NGINX), and secure offline-capable data storage.
+<p align="center">
+  <img src="./Images/screenshots.png" alt="Screenshot"/>
+</p>
 
 ---
 
@@ -12,6 +15,10 @@ It consists of three main components:
 1. **Android Application:** Built in Java using Android Studio, it stores work logs locally using ROOM and handles authentication with JWT tokens. Retrofit is used to communicate securely with the backend API.  
 2. **Backend & Server Simulation:** Docker containers run MySQL (database), NGINX (image storage), and a Python Flask API (data management, authentication, and RESTful communications).  
 3. **Database:** Structured and secure MySQL schema designed to handle clients, repair requests, technicians, assignments, and images efficiently.
+
+<p align="center">
+  <img src="./Images/Diagram.png" alt="Diagram"/>
+</p>
 
 ---
 
